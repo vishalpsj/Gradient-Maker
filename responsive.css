@@ -1,0 +1,91 @@
+/* Responsive.css */
+
+/* Base styles for responsive behavior */
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 1rem;
+}
+
+/* Media Queries */
+
+/* For small screens (max-width: 576px) */
+@media (max-width: 576px) {
+    .heading h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .colorCodeBox, .outputBox {
+        width: 95%;
+    }
+
+    .box {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1.6rem;
+    }
+
+    .gradientCode {
+        height: auto;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .copy {
+        bottom: auto;
+        right: auto;
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
+
+/* For medium screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .heading h1 {
+        font-size: 4rem;
+    }
+
+    .content {
+        gap: 2.5rem;
+    }
+
+    .colorCodeBox, .outputBox {
+        width: 90%;
+    }
+
+    button {
+        width: auto;
+        padding: 1rem 2rem;
+    }
+
+    .gradientCode {
+        padding: 1.2rem;
+    }
+}
+
+/* For large screens (max-width: 992px) */
+@media (max-width: 992px) {
+    .heading h1 {
+        font-size: 5rem;
+    }
+
+    .colorCodeBox, .outputBox {
+        width: 85%;
+    }
+
+    button {
+        width: 12rem;
+    }
+}
