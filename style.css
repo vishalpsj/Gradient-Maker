@@ -189,10 +189,11 @@ button:hover{
     gap: 1.3rem;
     overflow: hidden;
     -webkit-tap-highlight-color: transparent;
-
-    & i{
-        font-size: 1.5rem;
-    }
+    transition: all .25s;
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
 }
 
 .copy:hover{
