@@ -42,11 +42,19 @@ const handlebtn2 = () => {
 
 
 btn1.addEventListener('click', handlebtn1) 
+btn1.addEventListener('touchstart', handlebtn1) 
 btn2.addEventListener('click', handlebtn2)
+btn2.addEventListener('touchstart', handlebtn2)
 copy.addEventListener('click', () => {
     navigator.clipboard.writeText(output.innerText)
     copy.innerHTML = '<p>Copied</p><i class="ri-checkbox-multiple-fill"></i>';
-    // alert("Copied")
+    setTimeout(() => {
+        copy.innerHTML = `<p>Copy</p><i class="ri-file-copy-fill"></i>`
+    }, 1000)
+})
+copy.addEventListener('touchstart', () => {
+    navigator.clipboard.writeText(output.innerText)
+    copy.innerHTML = '<p>Copied</p><i class="ri-checkbox-multiple-fill"></i>';
     setTimeout(() => {
         copy.innerHTML = `<p>Copy</p><i class="ri-file-copy-fill"></i>`
     }, 1000)
