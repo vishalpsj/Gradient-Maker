@@ -187,6 +187,8 @@ button:hover{
     justify-content: center;
     align-items: center;
     gap: 1.3rem;
+    overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
 
     & i{
         font-size: 1.5rem;
